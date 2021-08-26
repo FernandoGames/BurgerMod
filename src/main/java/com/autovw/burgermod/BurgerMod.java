@@ -13,15 +13,26 @@ import org.apache.logging.log4j.Logger;
 
 /**
  * Author: Autovw
+ * Documentation: FernandoGames
+ *
+ * By adding @Mod annotation the mod loader knows that the class is a mod entry point.
  */
 @Mod(modid = com.autovw.burgermod.BurgerMod.MODID, name = com.autovw.burgermod.BurgerMod.NAME, version = com.autovw.burgermod.BurgerMod.VERSION)
 public class BurgerMod {
+    /**
+     * MODID is a variable storing the mod id
+     * NAME is a variable storing the mod name
+     * VERSION is a variable storing the mod version
+     */
     public static final String MODID = "burgermod";
     public static final String NAME = "Burger Mod";
     public static final String VERSION = "1.7.0";
 
     private static Logger logger;
 
+    /**
+     * Creating an instance to register Proxy
+     */
     @Mod.Instance
     public static BurgerMod instance;
 
